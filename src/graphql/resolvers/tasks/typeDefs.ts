@@ -70,7 +70,7 @@ type Query{
 
 type Mutation{
     createTask(input: TaskInput): Task
-    upStringTask(id: ID!, edits: TaskInputEdits): Boolean
+    updateTask(id: ID!, edits: TaskInputEdits): Boolean
     deleteTask(id: ID!): Boolean
 }
 `

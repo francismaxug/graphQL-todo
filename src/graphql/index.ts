@@ -1,6 +1,6 @@
 import { userTypeDefs } from "./resolvers/user/typeDefs"
 import { signup, login } from "./resolvers/user/mutations"
-import { createTask } from "./resolvers/tasks/mutations"
+import { createTask, deleteTask, updateTask } from "./resolvers/tasks/mutations"
 import { getMe, userWithTasks } from "./resolvers/user/queries"
 import { taskTypeDefs } from "./resolvers/tasks/typeDefs"
 import {
@@ -55,5 +55,7 @@ export const resolvers = {
     signup,
     login,
     createTask,
+    updateTask,
+    deleteTask
   },
 }
